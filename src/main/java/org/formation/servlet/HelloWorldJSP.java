@@ -12,7 +12,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.PushBuilder;
 
+@WebServlet("/HelloWorldJSP")
 public class HelloWorldJSP extends HttpServlet {
-	
-	req.getRequestDispatcher("/jsp/target.jsp").forward(req, resp);
+	@Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException,ServletException {
+		req.getRequestDispatcher("/jsp/target.jsp").forward(req, resp);
+	}
 }
