@@ -3,3 +3,6 @@ curl https://downloads.apache.org/tomcat/tomcat-10/v10.0.5/bin/apache-tomcat-10.
 mkdir /opt/tomcat
 tar xzvf /tmp/apache-tomcat*tar.gz -C /opt/tomcat --strip-components=1
 ls /opt/tomcat && ls /opt/tomcat/bin
+echo "== showing /opt/tomcat/conf =="
+ls /opt/tomcat/conf
+cp .github/scripts/tomcat_user.xml /opt/tomcat/conf/tomcat_user.xml

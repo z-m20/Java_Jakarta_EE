@@ -26,6 +26,19 @@
     </dependency>
   </dependencies>
   <build>
+  	<plugins>
+	  	<plugin>
+		    <groupId>org.apache.tomcat.maven</groupId>
+		    <artifactId>tomcat-maven-plugin</artifactId>
+		    <version>2.2</version>
+		    <configuration>
+		        <url>http://your-server:8080/manager/text</url>
+		        <username>a-username</username>
+		        <password>a-password</password>
+		        <path>/a-path</path>
+		    </configuration>
+		</plugin>
+  	</plugins>
     <finalName>java-web-project</finalName>
   </build>
 </project>
