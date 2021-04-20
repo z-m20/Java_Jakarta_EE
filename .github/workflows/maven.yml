@@ -29,8 +29,8 @@ jobs:
       run: bash .github/scripts/install_tomcat.sh 
     - name: Tomcat startup
       run: ls /opt/tomcat/bin && bash /opt/tomcat/bin/startup.sh
-      #- name: Locate maven settings.xml
-      # run: find / -name settings.xml 2>/dev/null
+    - name: Locate maven settings.xml
+      run: cat /usr/share/apache-maven-3.6.3/conf/settings.xml 
       #- name: Maven deploy with Tomcat
       # run: mvn tomcat:deploy
 
