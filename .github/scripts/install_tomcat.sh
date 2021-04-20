@@ -5,4 +5,7 @@ tar xzvf /tmp/apache-tomcat*tar.gz -C /opt/tomcat --strip-components=1
 ls /opt/tomcat && ls /opt/tomcat/bin
 echo "== showing /opt/tomcat/conf =="
 ls /opt/tomcat/conf
-cp .github/scripts/tomcat_user.xml /opt/tomcat/conf/tomcat_user.xml
+echo "== Removng default tomcat-users.xml =="
+rm /opt/tomcat/conf/tomcat-users.xml
+echo "== Copying new one =="
+cp .github/scripts/tomcat_user.xml /opt/tomcat/conf/tomcat-users.xml
