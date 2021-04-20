@@ -6,6 +6,5 @@ ls /opt/tomcat && ls /opt/tomcat/bin
 echo "== showing /opt/tomcat/conf =="
 ls /opt/tomcat/conf
 echo "== Removng default tomcat-users.xml =="
-rm /opt/tomcat/conf/tomcat-users.xml
-echo "== Copying new one =="
 cp .github/scripts/tomcat_user.xml /opt/tomcat/conf/tomcat-users.xml
+cp .github/scripts/maven-settings.xml /usr/share/apache-maven-3.6.3/conf/settings.xml
