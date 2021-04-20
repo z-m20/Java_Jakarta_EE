@@ -27,6 +27,8 @@ jobs:
       run: mvn install
     - name: Tomcat install
       run: bash .github/scripts/install_tomcat.sh 
+    - name: Tomcat startup
+      run: bash /opt/tomcat/bon/startup.sh
     - name: Maven deploy with Tomcat
-      run: mvn tomcat10:deploy 
+      run: mvn tomcat:deploy
 
