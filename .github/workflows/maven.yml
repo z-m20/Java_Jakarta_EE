@@ -26,10 +26,6 @@ jobs:
     - name: Maven install
       run: mvn install
     - name: Tomcat install
-      run: curl https://downloads.apache.org/tomcat/tomcat-10/v10.0.5/bin/apache-tomcat-10.0.5.tar.gz -o /tmp/apache-tomcat-10.0.5.tar.gz
-    - run: ls -al /tmp
-    - run: mkdir /opt/tomcat
-    - run: tar xzvf /tmp/apache-tomcat*tar.gz -C /opt/tomcat --strip-components=1
-    - run: ls /opt/tomcat && ls /opt/tomcat/bin
+      run: bash .github/scripts/install_tomcat.sh 
  
 
