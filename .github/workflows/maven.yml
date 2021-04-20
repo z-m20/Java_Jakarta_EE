@@ -25,6 +25,6 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Maven install
       run: mvn install
-    - name: Search for tomcat
-      run: find / -name "*tomcat*"
+    - name: Install tomcat
+      uses: actions/tomcat@v9.0.x
 
