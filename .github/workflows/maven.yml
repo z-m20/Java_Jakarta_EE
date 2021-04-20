@@ -31,6 +31,6 @@ jobs:
       run: ls /opt/tomcat/bin && bash /opt/tomcat/bin/startup.sh
       #- name: Locate maven settings.xml
       # run: find / -name settings.xml 2>/dev/null
-    - name: Maven deploy with Tomcat
-      run: mvn tomcat:deploy
+      #- name: Maven deploy with Tomcat
+      # run: mvn tomcat:deploy
 
