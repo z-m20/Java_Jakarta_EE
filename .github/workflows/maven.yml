@@ -26,10 +26,8 @@ jobs:
     - name: Maven install
       run: mvn install
     - name: Tomcat install
-      run: curl https://downloads.apache.org/tomcat/tomcat-10/v10.0.4/bin/apache-tomcat-10.0.4.tar.gz -o /tmp/apache-tomcat-10.0.4.tar.gz
+      run: curl https://downloads.apache.org/tomcat/tomcat-10/v10.0.5/bin/apache-tomcat-10.0.5.tar.gz -o /tmp/apache-tomcat-10.0.5.tar.gz
     - name: List tmp
       run: ls -al /tmp
-    - name: Show downloaded file
-      run: cat /tmp/apache-tomcat-10.0.4.tar.gz
  
 
