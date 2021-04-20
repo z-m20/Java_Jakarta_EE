@@ -118,7 +118,7 @@ under the License.
      |
     -->
     <server>
-      <id>TomcatServer</id>
+      <id>tomcatserver</id>
       <username>admin</username>
       <password>admin</password>
     </server>
