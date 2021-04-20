@@ -41,5 +41,7 @@ jobs:
       run: curl http://localhost:8080/java-web-project/HelloWorldJSP
     - name: Test 3 root
       run: curl http://localhost:8080/java-web-project/HelloWorldNoJSP
+    - name: Test 4 root
+      run: curl http://localhost:8080/java-web-project/QuiNExistePas
     - name: Shutdown
       run: bash /opt/tomcat/bin/shutdown.sh
