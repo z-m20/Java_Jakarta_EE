@@ -25,6 +25,4 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Maven install
       run: mvn install
-    - name: Install tomcat
-      run: bash .github/scripts/install_tomcat.sh
 
