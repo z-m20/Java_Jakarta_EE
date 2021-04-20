@@ -30,6 +30,6 @@ jobs:
     - run: ls -al /tmp
     - run: mkdir /opt/tomcat
     - run: tar xzvf /tmp/apache-tomcat*tar.gz -C /opt/tomcat --strip-components=1
-    - run: ls /opt/tomcat && /opt/tomcat/bin
+    - run: ls /opt/tomcat && ls /opt/tomcat/bin
  
 
