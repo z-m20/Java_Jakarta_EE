@@ -26,5 +26,5 @@ jobs:
     - name: Maven install
       run: mvn install
     - name: Install tomcat
-      uses: actions/tomcat@v9.0.x
+      uses: actions/tomcat@v10.0.5
 
