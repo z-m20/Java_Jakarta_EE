@@ -36,7 +36,7 @@ jobs:
     - name: Test 1
       run: curl http://localhost:8080 1> /dev/null
     - name: Test root
-      run: curl http://localhost:8080/java-web-project
+      run: curl http://localhost:8080/java-web-project/
     - name: Test 2 root
       run: curl http://localhost:8080/java-web-project/HelloWorldJSP
     - name: Test 3 root
