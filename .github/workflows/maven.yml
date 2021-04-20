@@ -33,7 +33,13 @@ jobs:
       run: ls /opt/tomcat/bin && bash /opt/tomcat/bin/catalina.sh run&
       #- name: Maven deploy with Tomcat
       # run: mvn tomcat:deploy
-    - name: Test
-      run: curl http://localhost:8080
+    - name: Test 1
+      run: curl http://localhost:8080 1> /dev/null
+    - name: Test root
+      run: curl http://localhost:8080/java-web-project
+    - name: Test 2 root
+      run: curl http://localhost:8080/java-web-project/HelloWorldJSP
+    - name: Test 3 root
+      run: curl http://localhost:8080/java-web-project/HelloWorldNoJSP
     - name: Shutdown
       run: bash /opt/tomcat/bin/shutdown.sh
