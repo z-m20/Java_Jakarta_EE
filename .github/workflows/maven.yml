@@ -25,4 +25,6 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Maven install
       run: mvn install
+    - name: Tomcat install
+      run: apt install tomcat9
 
