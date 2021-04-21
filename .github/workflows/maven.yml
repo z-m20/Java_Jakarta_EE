@@ -39,7 +39,7 @@ jobs:
       run: curl http://localhost:8080/java-web-project/HelloWorldJSP | grep -v "<title>HTTP Status 404 – Not Found</title>"
     - name: Test 3 root
       run: curl http://localhost:8080/java-web-project/HelloWorldNoJSP | grep -v "<title>HTTP Status 404 – Not Found</title>"
-      # - name: Test 4 root
-      # run: curl http://localhost:8080/java-web-project/QuiNExistePas | grep -v "<title>HTTP Status 404 – Not Found</title>"
+    - name: Test 4 root
+      run: curl http://localhost:8080/java-web-project/QuiNExistePas | grep -v "<title>HTTP Status 404 – Not Found</title>"
     - name: Shutdown
       run: bash /opt/tomcat/bin/shutdown.sh
