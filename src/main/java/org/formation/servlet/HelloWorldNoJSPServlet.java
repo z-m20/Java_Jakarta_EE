@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.PushBuilder;
 
+// c'est mal, des balises Html et java 
 @WebServlet("/HelloWorldNoJSP")
 public class HelloWorldNoJSPServlet extends HttpServlet {
 
